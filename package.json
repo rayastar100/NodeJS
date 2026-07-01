@@ -1,0 +1,14 @@
+{
+  "name": "greet-app",
+  "version": "1.0.0",
+  "description": "Simple greeting function with CI testing",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "./test.sh",
+    "start": "node src/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "ISC"
+}
