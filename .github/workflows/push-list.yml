@@ -1,0 +1,19 @@
+name: push-list
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7.0.0
+      
+      - name: List files
+        run: |
+          echo "Files in repository:"
+          ls -la
